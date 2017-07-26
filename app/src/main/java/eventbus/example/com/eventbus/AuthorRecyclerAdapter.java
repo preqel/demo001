@@ -41,7 +41,7 @@ public class AuthorRecyclerAdapter extends RecyclerView.Adapter<AuthorRecyclerAd
         public TextView mtextview;
         public ViewHolder(View viewhodler){
             super(viewhodler);
-            mtextview = (TextView) viewhodler.findViewById(R.id.text);
+            mtextview = (TextView) viewhodler.findViewById(R.id.textView);
         }
     }
 }
