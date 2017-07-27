@@ -1,6 +1,7 @@
 package eventbus.example.com.eventbus;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
@@ -23,6 +24,7 @@ public class RecycleViewActivity extends Activity{
         recyeview.setAdapter(new AuthorRecyclerAdapter(datas));
         LinearLayoutManager linearlayoutmanger = new LinearLayoutManager(this);
         recyeview.setLayoutManager(linearlayoutmanger);
+        recyeview.addItemDecoration(new ItemDivider().setDividerColor(Color.BLUE).setDividerWith(2));
 
 
     }
